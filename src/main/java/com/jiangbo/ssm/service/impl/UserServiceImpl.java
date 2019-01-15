@@ -1,20 +1,19 @@
 package com.jiangbo.ssm.service.impl;
 
+import com.jiangbo.ssm.domain.User;
+import com.jiangbo.ssm.mapper.UserMapper;
+import com.jiangbo.ssm.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.jiangbo.ssm.dao.UserDao;
-import com.jiangbo.ssm.domain.User;
-import com.jiangbo.ssm.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService {
 
 	@Autowired
-	private UserDao userDao;
+	private UserMapper userMapper;
 	
 	public User getUserById(Integer userId) {
-		return userDao.getUserById(userId);
+		return userMapper.selectByPrimaryKey(userId);
 	}
 
 }
