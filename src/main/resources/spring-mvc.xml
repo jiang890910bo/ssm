@@ -47,15 +47,15 @@
 	
 	
     <!-- 拦截器，实现接口org.springframework.web.servlet.handler.HandlerInterceptorAdapter -->  
-       <mvc:interceptors>  
-	    <mvc:interceptor>
-	    	<!--  <mvc:mapping path="/**"/>--><!-- 拦截所有 -->
-	    	<mvc:mapping path="/**/*.html"/><!-- 拦截所有已后缀.html的url -->
-	    	<mvc:mapping path="/user/*"/><!-- 拦截http:域名/user/*的url,如：http://localhost:8080/ssm/user/showUser.htm -->
-	    	
-	   		<bean class="com.jiangbo.ssm.interceptor.MyInterceptor" />
-	    </mvc:interceptor>
-	</mvc:interceptors>
+       <!--<mvc:interceptors>  -->
+	    <!--<mvc:interceptor>-->
+	    	<!--&lt;!&ndash;  <mvc:mapping path="/**"/>&ndash;&gt;&lt;!&ndash; 拦截所有 &ndash;&gt;-->
+	    	<!--<mvc:mapping path="/**/*.html"/>&lt;!&ndash; 拦截所有已后缀.html的url &ndash;&gt;-->
+	    	<!--<mvc:mapping path="/user/*"/>&lt;!&ndash; 拦截http:域名/user/*的url,如：http://localhost:8080/ssm/user/showUser.htm &ndash;&gt;-->
+	    	<!---->
+	   		<!--<bean class="com.jiangbo.ssm.interceptor.MyInterceptor" />-->
+	    <!--</mvc:interceptor>-->
+	<!--</mvc:interceptors>-->
 	
 	
 	<!-- 配置文件上传 -->

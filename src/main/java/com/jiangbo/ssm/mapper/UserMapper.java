@@ -1,8 +1,6 @@
 package com.jiangbo.ssm.mapper;
 
-import org.springframework.stereotype.Repository;
-
-import com.jiangbo.ssm.domain.User;
+import com.jiangbo.ssm.entity.User;
 
 
 public interface UserMapper {

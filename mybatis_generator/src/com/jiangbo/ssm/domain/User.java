@@ -1,4 +1,4 @@
-package com.jiangbo.ssm.domain;
+package com.jiangbo.ssm.entity;
 
 public class User {
     private Integer id;

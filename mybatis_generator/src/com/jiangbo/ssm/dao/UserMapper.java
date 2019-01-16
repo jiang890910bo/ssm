@@ -1,6 +1,6 @@
 package com.jiangbo.ssm.dao;
 
-import com.jiangbo.ssm.domain.User;
+import com.jiangbo.ssm.entity.User;
 
 public interface UserMapper {
     int deleteByPrimaryKey(Integer id);
